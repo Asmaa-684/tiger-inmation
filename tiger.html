@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @keyframes divAnimation{
+            0%{
+                left: 90%;
+            }
+            25%{
+                left: 0%;
+            }
+            50%{
+                transform: rotateY(180deg);
+            }
+            75%{
+                left: 90%;
+            }
+            100%{
+                left: 0%;
+            }
+        }
+        body{
+            position: relative;
+        }
+
+        #pp{
+           
+            animation: divAnimation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+    </style>
+    <body>
+        
+        <img src="./tiger.gif" id="pp">
+    </body>
+  </head>
+</html>
